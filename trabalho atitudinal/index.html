@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <meta charset="UTf-8">
+        <title>Home</title>
+		<link rel="icon" href="imagens/icon.jpg" type="image/jpg">
+        <link rel="stylesheet" href="estilo.css">
+        <header>
+            <img src="imagens/fieb.png" height="65px" alt="LogoFieb">
+        </header>
+    </head>
+    <body>
+        <input type="checkbox" id="chec">
+        <label for="chec">
+            <img src="imagens/risco-menu.jpg" id="risco">
+        </label>
+        <nav>
+            <ul id="ul1">
+                <hr>
+                <li><a href="Soft Skills.html" id="aba">Soft Skills</a></li>
+                <hr>
+                <li><a href="Inteligência Emocional.html" id="aba">Inteligência Emocional</a></li>
+                <hr>
+                <li><a href="faleconosco.html" id="aba">Fale Conosco</a></li>
+                <hr>
+            </ul>
+        </nav>
+        <br />
+        <div class="center">
+        <h1 id="fonte">Integrantes do Grupo:</h1>
+        <br />
+        <style>
+        
+            .container {
+              max-width: 800px;
+              margin: 0 auto;
+              display: flex;
+              justify-content: space-between;
+            }
+        
+            .imagem {
+              position: relative;
+            }
+        
+            .imagem img {
+              width: 300px;
+              height: 300px;
+              object-fit: cover;
+              cursor: pointer;
+            }
+        
+            .texto {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              background-color: rgba(0, 0, 0, 0.7);
+              color: rgb(176,224,230);
+              padding: 10px;
+              opacity: 0;
+              transition: opacity 0.3s ease-in-out;
+            }
+        
+            .imagem:hover .texto {
+              opacity: 1;
+            }
+          </style>
+        </head>
+        <body>
+          
+          <div class="container">
+            <div class="imagem" onclick="mostrarTexto(1)">
+              <img src="imagens/dtt.jpg" id="ft1">
+              <div class="texto" id="texto">Daniel Duarte, 16 anos <br /> Soft Skills: Trabalho em Equipe e Autoconfiança</div>
+            </div>
+            <div class="imagem" onclick="mostrarTexto(2)">
+              <img src="imagens/eloah.jpg" id="ft2">
+              <div class="texto" id="texto">Eloah Gomes, 16 anos <br /> Soft Skills: Autoconfiança e Oratória</div>
+            </div>
+            <div class="imagem" onclick="mostrarTexto(3)">
+              <img src="imagens/well2.jpg" id="ft3">
+              <div class="texto" id="texto">Wellington José de Paula, 17 anos <br /> Soft Skills: Empatia e Resiliência</div>
+            </div>
+          </div>
+        
+          <script>
+            function mostrarTexto(imagemId) {
+              var texto = document.getElementById("texto" + imagemId);
+              texto.style.opacity = 1;
+            }
+          </script>
+
+         <br />
+         <hr>
+          <br />
+          <h1 id="fonte3">Notícias sobre Soft Skills de 2023</h1>
+          <br />
+          <h2>Qual é a importância das soft skills no ambiente corporativo?</h2>
+          <br />
+
+          <img src="imagens/not1.webp" width="50%" height="65%" id="img1">
+
+          <br />
+          <p id="noticia">
+            Devido às inúmeras transformações tecnológicas, o mercado de trabalho vem sofrendo várias mudanças e 
+            com elas vêm à urgência da rápida adaptação. <br /> Os conhecimentos técnicos – chamados de hard skills, tais 
+            como a fluência em idiomas, conhecimentos avançados em softwares, <br /> certificação em cálculos matemáticos - 
+            continuam sendo importantes, mas o mercado precisa de mais.
+            É aí que entram as soft skills, <br /> as habilidades comportamentais que dizem respeito às relações interpessoais, 
+            comunicação, liderança, trabalho em equipe, resolução de problemas, <br /> tomada de decisão, resiliência, flexibilidade, 
+            entre outras características.
+          </p>
+          <br />
+
+          <p id="noticia">Os departamentos de recursos humanos estão cada vez mais atentos aos futuros profissionais que têm essas qualidades. 
+            “Hoje em dia, o mercado de trabalho <br /> considera que as hard skills são o mínimo exigido de qualquer um que tenha formação 
+            técnica ou superior. Nesse contexto, as soft skills <br /> passam a ser o diferencial que se busca. Por isso, ter essas 
+            habilidades comportamentais é importante e vai <br /> permitir que as pessoas se tornem mais competitivas e estejam mais 
+            preparadas para atender às demandas da sociedade e do mercado”, pontua Zampar.</p>
+            <br />
+            <h3 id="fonte1">Fonte: G1 </h3>
+            <br />
+            <h3 id="noticia">Para continuar a leitura, <a href="https://g1.globo.com/pr/parana/especial-publicitario/centro-universitario-integrado/noticia/2023/02/24/qual-e-a-importancia-das-soft-skills-no-ambiente-corporativo.ghtml" id="link1"> aperte aqui</a></h3>
+        <br />
+        <hr>
+        <h1 id="fonte">Como dominar as 3 soft skills que caracterizam os bons CEOs</h1>
+        <br />
+        <img src="imagens/not2.webp" id="img1" width="45%" height="65%">
+        <br /> <br />
+        <p id="noticia">
+            Para Bonnie Low-Kramen, coach de ambiente de trabalho, muitos CEOs dos Estados Unidos estão perdendo seu 
+            senso de humanidade. <br />Ela cita como exemplos as demissões em massa por e-mail e políticas rígidas de 
+            retorno ao escritório. “A maioria das pessoas  <br /> entende que os negócios às vezes exigem medidas drásticas”, 
+            disse Low-Kramen à CNBC Make It. No entanto, ela acrescenta que isso não significa “ser mesquinho, traumatizante e humilhante”.<br />
+        </p>
+        <br />
+        <p id="noticia">
+            Na visão da especialista, uma das causas do problema é a falta de habilidades interpessoais dos profissionais. Segundo ela, as <br />  
+            empresas já buscam nos candidatos características como trabalho em equipe, empatia e atitude positiva. Da mesma maneira, 
+            os trabalhadores <br /> valorizam estas habilidades em seus chefes. Ela cita três soft skills (apelidadas de “três Vs”) <br /> que são 
+            particularmente importantes e devem ser olhadas com atenção.
+        </p>
+        <br />
+        <h3 id="fonte1">Fonte: Globo </h3>
+        <br />
+        <h3 id="noticia">Para continuar a leitura, <a href="https://revistapegn.globo.com/gestao-de-pessoas/noticia/2023/05/como-dominar-as-3-soft-skills-que-caracterizam-os-bons-ceos.ghtml" id="link1"> aperte aqui</a></h3>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="UTf-8">
+        <title>Fale Conosco</title>
+		<link rel="icon" href="imagens/icon.jpg" type="image/jpg">
+        <link rel="stylesheet" href="estilo.css">
+        <header>
+            <img src="imagens/fieb.png" height="65px" alt="LogoFieb">
+        </header>
+    </head>
+    <body>
+        <input type="checkbox" id="chec">
+        <label for="chec">
+            <img src="imagens/risco-menu.jpg" id="risco">
+        </label>
+        <nav>
+            <ul id="ul1">
+                <hr>
+                <li><a href="index.html" id="aba">Home</a></li>
+                <hr>
+                <li><a href="Soft Skills.html" id="aba">Soft Skills</a></li>
+                <hr>
+                <li><a href="Inteligência Emocional.html" id="aba">Inteligência Emocional</a></li>
+                <hr>
+            </ul>
+        </nav>
+        <div class="center">
+        <br />
+        <h1 id="fonte">Fale Conosco</h1>
+        <br />
+        <form action="faleconosco.html" method="post">
+            <input type="text" placeholder="Nome" id="nome" required>
+            
+            <input type="email" placeholder="Email" id="email" required>
+            
+            <textarea id="mensagem" placeholder="Digite uma Mensagem" required></textarea>
+            
+            <input type="submit" id="botao" value="Enviar" onclick="exibirMensagem()">
+          </form>
+        </div>
+    </body>
+</html>

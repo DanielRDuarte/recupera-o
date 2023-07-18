@@ -1,0 +1,224 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#aba{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    font-family: arial;
+    background: url(imagens/fundo2.jpg);
+    background-size: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+#risco{
+    width: 40px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+nav{
+    background-color: rgba(16,16,16,.5);
+    width: 350px;
+    height: 100%;
+    left: -350px;
+    position: absolute;
+    transition: all .5s;
+    z-index: 2;
+}
+
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(350px);
+}
+
+#ul1{
+    top: 70px;
+    position: absolute;
+    width: 100%;
+}
+
+#aba{
+    display: block;
+    padding: 20px 5px;
+    color: white;
+}
+#aba:hover{
+    background-color: rgb(176,224,230);
+    color: black;
+}
+label{
+    padding: 15px;
+    position: absolute;
+    z-index: 3;
+}
+
+.center{
+    text-align: center;
+}
+#img{
+    border: 10px solid transparent;
+    background-color: rgb(117, 101, 11);
+}
+#img1{
+    border: 10px solid transparent;
+    background-color: rgb(117, 101, 11);
+    float: left;
+    margin-right: 20px;
+}
+#img2{
+    border: 10px solid transparent;
+    border-bottom-color: white;
+    border-top-color: rgb(67, 67, 252);
+    border-left-color: rgb(180, 156, 18);
+    border-right-color: red;
+}
+#img3{
+    border: 10px solid transparent;
+    background-color: rgb(117, 101, 11);
+    border-right-color: rgb(67, 67, 252);
+    border-bottom-color: rgb(67, 67, 252);
+}
+#img4{
+    border: 10px solid transparent;
+    background-color: rgb(117, 101, 11);
+    border-right-color: black;
+    border-bottom-color: black;
+}
+#img5{
+    border: 10px solid transparent;
+    background-color: rgb(67, 67, 252);
+    border-right-color: rgb(206, 169, 5);
+    border-bottom-color: rgb(206, 169, 5);
+}
+#img6{
+    border: 10px solid transparent;
+    background-color: rgb(117, 101, 11);
+    border-right-color: rgb(24, 160, 69);
+    border-bottom-color: rgb(24, 160, 69);
+}
+#img7{
+    border: 10px solid transparent;
+    background-color: red;
+    border-right-color: rgb(67, 67, 252);
+    border-bottom-color: rgb(67, 67, 252);
+}
+#img8{
+    border: 10px solid transparent;
+    background-color: white;
+    border-right-color: rgb(8, 77, 110);
+    border-bottom-color: rgb(8, 77, 110);
+}
+#img9{
+    border: 10px solid transparent;
+    background-color: white;
+}
+#img10{
+    border: 10px solid transparent;
+    background-color: white;
+    border-right-color: rgb(67, 67, 252);
+    border-bottom-color: rgb(67, 67, 252);
+}
+#borda{
+    border-radius: 20px;
+}
+#fonte{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+}
+#fonte1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    float: right;
+    margin-right: 20px;
+}
+#fonte2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+#fonte3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color: rgb(67, 67, 252);
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+input,textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+input[type="submit"] {
+    background-color: #333333;
+    color: #ffffff;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #555555;
+}
+input[type="submit"]:focus {
+    outline: none;
+}
+#botao{
+    color: black;
+    background-color: rgb(176,224,230);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagem {
+    position: relative;
+}
+
+.imagem img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.texto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(176,224,230);
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.imagem:hover .texto {
+    opacity: 1;
+}
+#noticia{
+    font-size: larger;
+}
+header {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
